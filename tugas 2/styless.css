@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7ff; /* Warna biru muda untuk latar belakang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* Warna putih untuk kontras */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #0056b3; /* Warna biru tua untuk teks */
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #007bff; /* Border biru */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#addBtn, #clearBtn {
+    background-color: #007bff; /* Warna biru untuk tombol */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#addBtn:hover, #clearBtn:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+#taskList {
+    list-style-type: none;
+}
+
+.task-item {
+    background-color: #d6f0ff; /* Warna biru muda untuk latar belakang task */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item input[type="text"] {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+}
+
+.task-item input[type="text"]:disabled {
+    background-color: transparent;
+    color: #333;
+}
+
+.delete-btn, .edit-btn {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    margin-right: 10px;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+#clearBtn {
+    background-color: #0056b3; /* Biru lebih gelap untuk tombol clear */
+}
+
+#clearBtn:hover {
+    background-color: #003f7f; /* Biru lebih gelap saat hover tombol clear */
+}
